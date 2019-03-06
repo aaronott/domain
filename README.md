@@ -10,13 +10,9 @@ Script to enumerate subdomains, leveraging recon-ng. Uses google scraping, bing 
 
 # Quick install and use
 
-## Setup
-
 We will set this up using the script from https://github.com/aaronott/domain/blob/master/setup_enumall.sh. Do a quick review of that script before running it blindly. We make a quick change to the URL of the wordlist prior to running.
 
 1. `wget https://raw.githubusercontent.com/aaronott/domain/master/setup_enumall.sh && bash setup_enumall.sh`
-
-## Steps
 
 2. follow the instructions for the configure the virtual env
 
@@ -28,6 +24,8 @@ We will set this up using the script from https://github.com/aaronott/domain/blo
 
 3. Run the command: 
 `domain/enumall.py domain1.com -w sortedcombined-knock-dnsrecon-fierce-reconng.txt`
+
+4. Profit
 
 # Slower step-by-step install instructions
 ## Pre-Requisites
