@@ -8,7 +8,29 @@ Only 1 module needs an api key (/api/google_site) find instructions for that on 
 
 Script to enumerate subdomains, leveraging recon-ng. Uses google scraping, bing scraping, baidu scraping, yahoo scraping, netcraft, and bruteforces to find subdomains. Plus resolves to IP.
 
-# Pre-Requisites
+# Quick install and use
+
+## Setup
+
+We will set this up using the script from https://github.com/aaronott/domain/blob/master/setup_enumall.sh. Do a quick review of that script before running it blindly. We make a quick change to the URL of the wordlist prior to running.
+
+`wget https://raw.githubusercontent.com/aaronott/domain/master/setup_enumall.sh && bash setup_enumall.sh`
+
+## Steps
+
+follow the instructions for the configure the virtual env
+
+```
+[+] configure the virtual env
+[+] execute the following command
+    cd <path>; mkvirtualenv enumall; pip install -r recon-ng/REQUIREMENTS; pip install -r altdns/requirements.txt
+```
+
+Run the command: 
+`domain/enumall.py domain1.com -w sortedcombined-knock-dnsrecon-fierce-reconng.txt`
+
+# Slower step-by-step install instructions
+## Pre-Requisites
 
 Installation recon-ng from Source
 
